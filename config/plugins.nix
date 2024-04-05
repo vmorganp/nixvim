@@ -16,18 +16,12 @@
       extraOptions = {
         pickers = {
           find_files = { hidden = true; };
-          # live_grep = {
-          #     additional_args = function(opts)
-          #         return { "--hidden" }
-          #     end
-          # };
-        };
-        defaults = {
-          file_ignore_patterns = [ ".git/" "node_modules" "venv" ];
+          live_grep = { additional_args = [ "--hidden" ]; };
         };
       };
+      defaults = { file_ignore_patterns = [ ".git/" "node_modules" "venv" ]; };
     };
-    # TODO add keybinds
+
     harpoon = {
       enable = true;
       keymaps = {
@@ -53,9 +47,12 @@
     fugitive.enable = true;
     gitgutter.enable = true;
 
-    # Autocomplete/lsp
+    # Autocomplete/lsp/snippets
+    luasnip.enable = true;
     cmp_luasnip.enable = true;
     cmp-nvim-lsp.enable = true;
+    cmp-path.enable = true;
+    friendly-snippets.enable = true;
 
     cmp = {
       enable = true;
