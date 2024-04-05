@@ -27,7 +27,6 @@
   { key = "<leader>Tn"; action = "<cmd>:set number!<CR>"; options = { desc = "toggle line numbers"; }; }
   { key = "<leader>"; action = ""; options = { desc = ""; }; }
 
-
 # tabs
     { key ="<leader>tc"; action="<cmd>:tabnew<CR>"; options = { desc = "create tab"; }; }
     { key ="<leader>th"; action="<cmd>:tabprevious<CR>"; options = { desc = "tab left"; }; }

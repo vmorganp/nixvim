@@ -8,6 +8,7 @@
     telescope.enable = true;
     harpoon.enable = true;
     oil.enable = true;
+    markdown-preview.enable = true;
 
 # Git stuff
 
