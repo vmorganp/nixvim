@@ -16,6 +16,7 @@ To test your configuration simply run the following command
 nix run .
 ```
 
-# Inspired by
+# Links
 
-https://www.youtube.com/watch?v=b641h63lqy0
+Inspired by: https://www.youtube.com/watch?v=b641h63lqy0
+Documented at: https://nix-community.github.io/nixvim/

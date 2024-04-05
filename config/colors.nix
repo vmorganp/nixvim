@@ -1,7 +1,13 @@
 {
-  # colorschemes.catppuccin.enable = true;
-  colorschemes.gruvbox.enable = true;
-  # colorschemes.vscode.enable = true;
-  # colorschemes.dracula.enable = true;
-  # colorschemes.one.enable = true;
+  colorschemes = {
+    catppuccin = {
+      # enable = true;
+      flavour = "mocha";
+    };
+    # gruvbox.enable = true;
+    # vscode.enable = true;
+    # dracula.enable = true;
+    # one.enable = true;
+    oxocarbon.enable = true;
+  };
 }
