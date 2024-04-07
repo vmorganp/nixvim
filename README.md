@@ -22,6 +22,11 @@ To build it for actual use,
 nix build
 ```
 
+On a system with nix and don't want to clone my stuff to use it
+```
+nix run github:vmorganp/nixvim
+```
+
 # Links
 
 Inspired by: https://www.youtube.com/watch?v=b641h63lqy0
