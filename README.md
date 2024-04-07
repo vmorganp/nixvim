@@ -16,6 +16,12 @@ To test your configuration simply run the following command
 nix run .
 ```
 
+To build it for actual use,
+
+```
+nix build
+```
+
 # Links
 
 Inspired by: https://www.youtube.com/watch?v=b641h63lqy0
