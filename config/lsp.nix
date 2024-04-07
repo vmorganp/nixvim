@@ -6,16 +6,17 @@
         pyright.enable = true;
         tsserver.enable = true;
         lua-ls.enable = true;
-        nixd.enable = true;
+        # nixd.enable = true; # this is wip and doesn't fill my needs at the moment
         rust-analyzer = {
           enable = true;
           installRustc = true;
           installCargo = true;
         };
       };
-
     };
+
     lsp-format.enable = true;
+
     none-ls = {
       enable = true;
       enableLspFormat = true;

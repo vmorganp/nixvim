@@ -1,6 +1,7 @@
 {
   opts = {
     number = true;
+    undofile = true;
     relativenumber = false;
     tabstop = 4;
     shiftwidth = 4;

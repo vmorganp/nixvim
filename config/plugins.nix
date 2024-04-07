@@ -9,6 +9,7 @@
       separatorStyle = "slant";
     };
     autoclose.enable = true;
+    nvim-lightbulb.enable = true;
 
     # Applications/Extensions? I guess
     telescope = {
@@ -34,18 +35,22 @@
           "4" = "<leader>h4";
           "5" = "<leader>h5";
         };
-
       };
     };
 
     chadtree.enable = true;
-
     markdown-preview.enable = true;
+    surround.enable = true;
+    todo-comments.enable = true;
+    rainbow-delimiters.enable = true;
+
+    leap.enable = true;
+    nvim-colorizer.enable = true;
 
     # Git stuff
 
     fugitive.enable = true;
-    gitgutter.enable = true;
+    gitsigns.enable = true;
 
     # Autocomplete/lsp/snippets
     luasnip.enable = true;
