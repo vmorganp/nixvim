@@ -39,5 +39,6 @@
     completeopt = "menuone,noselect";
 
     signcolumn = "yes";
+    colorcolumn = "80";
   };
 }
