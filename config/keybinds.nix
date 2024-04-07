@@ -251,7 +251,7 @@
     {
       key = "<leader>gb";
       action = "<cmd>:Git blame<CR>";
-      options = { desc = "git blame"; };
+      options = { desc = "show git blame"; };
     }
     {
       key = "<leader>gs";
