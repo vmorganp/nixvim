@@ -42,9 +42,13 @@
     markdown-preview.enable = true;
     surround.enable = true;
     todo-comments.enable = true;
+    treesitter.enable = true;
     rainbow-delimiters.enable = true;
 
-    leap.enable = true;
+    leap = {
+      enable = true;
+      addDefaultMappings = false;
+    };
     nvim-colorizer.enable = true;
 
     # Git stuff

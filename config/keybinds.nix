@@ -108,6 +108,14 @@
       lua = true;
       options = { desc = "search current buffer"; };
     }
+    {
+      key = "s";
+      action =
+        "function () require('leap').leap { target_windows = { vim.fn.win_getid() } } end";
+      lua = true;
+      options = { desc = "leap (bidirectional)"; };
+      mode = [ "n" ];
+    }
 
     # Toggles
     {
