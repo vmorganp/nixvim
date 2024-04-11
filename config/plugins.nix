@@ -10,6 +10,7 @@
     };
     autoclose.enable = true;
     nvim-lightbulb.enable = true;
+    zen-mode.enable = true;
 
     # Applications/Extensions? I guess
     telescope = {
@@ -21,6 +22,7 @@
         };
       };
       defaults = { file_ignore_patterns = [ ".git/" "node_modules" "venv" ]; };
+      extensions.fzf-native.enable = true;
     };
 
     harpoon = {
@@ -41,7 +43,10 @@
     chadtree.enable = true;
     markdown-preview.enable = true;
     surround.enable = true;
-    todo-comments.enable = true;
+    todo-comments = {
+      enable = true;
+      keymaps.todoTelescope = { key = "<leader>td"; };
+    };
     treesitter.enable = true;
     rainbow-delimiters.enable = true;
 

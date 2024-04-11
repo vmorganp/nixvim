@@ -217,11 +217,6 @@
 
     # quickfix
     {
-      key = "<leader>td";
-      action = "<cmd>:TodoTelescope<CR>";
-      options = { desc = "Quickfix List"; };
-    }
-    {
       key = "<leader>ql";
       action = "<cmd>:copen<CR>";
       options = { desc = "Quickfix List"; };
