@@ -9,7 +9,6 @@
       separatorStyle = "slant";
     };
     autoclose.enable = true;
-    nvim-lightbulb.enable = true;
     zen-mode.enable = true;
 
     # Applications/Extensions? I guess
@@ -42,7 +41,6 @@
 
     chadtree.enable = true;
     markdown-preview.enable = true;
-    surround.enable = true;
     todo-comments = {
       enable = true;
       keymaps.todoTelescope = { key = "<leader>td"; };
@@ -122,6 +120,12 @@
           '';
         };
       };
+    };
+
+    # Dark arts
+    copilot-vim = {
+      enable = true;
+      settings = { "no_tab_map" = true; };
     };
   };
 }

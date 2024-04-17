@@ -9,4 +9,6 @@
     ./autocmds.nix
   ];
   enableMan = true;
+
+  extraConfigLuaPost = "vim.cmd [[:let g:copilot_enabled = 0]]";
 }

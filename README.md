@@ -13,7 +13,8 @@ If you add a new configuration file, remember to add it to the
 To test your configuration simply run the following command
 
 ```
-nix run .
+NIXPKGS_ALLOW_UNFREE=1 nix run . --impure # until i figure out a better way to allow unfree
+# nix run .
 ```
 
 To build it for actual use,
@@ -23,6 +24,7 @@ nix build
 ```
 
 On a system with nix and don't want to clone my stuff to use it
+
 ```
 nix run github:vmorganp/nixvim
 ```

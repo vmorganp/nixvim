@@ -1,4 +1,5 @@
 {
+  luaLoader.enable = true; # experimental loading stuff, idk seems fun
   opts = {
     number = true;
     undofile = true;

@@ -1,9 +1,9 @@
 {
   colorschemes = {
-    catppuccin = {
-      # enable = true;
-      flavour = "mocha";
-    };
+    # catppuccin = {
+    #   enable = true;
+    #   flavour = "mocha";
+    # };
     # gruvbox.enable = true;
     # vscode.enable = true;
     # dracula.enable = true;

@@ -272,5 +272,30 @@
       action = "<cmd>:MarkdownPreview<CR>";
       options = { desc = "Markdown Preview"; };
     }
+
+    # Cope ilot
+    {
+      key = "<C-c>";
+      action = ''copilot#Accept("<CR>")'';
+      # This is a little jank, in that it types out keycodes. nixvim doesn't currently have the override for this
+      options = {
+        desc = "Copilot Accept";
+        silent = true;
+        expr = true;
+      };
+      mode = [ "i" ];
+    }
+
+    {
+      key = "<M-Bslash>";
+      action = "<Cmd>call copilot#Suggest()<CR>";
+      # This is a little jank, in that it types out keycodes. nixvim doesn't currently have the override for this
+      options = {
+        desc = "Copilot Suggest";
+        silent = true;
+      };
+      mode = [ "i" ];
+    }
+
   ];
 }

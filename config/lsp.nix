@@ -25,7 +25,7 @@
           actionlint.enable = true;
           codespell.enable = true;
           mypy.enable = true;
-          # terraform_validate.enable = true;
+          terraform_validate.enable = true;
         };
         formatting = {
           prettierd.enable = true;
@@ -34,7 +34,7 @@
             enable = true;
             withArgs = ''{extra_args = { "--line-length=120" }}'';
           };
-          # terraform_fmt.enable = true;
+          terraform_fmt.enable = true;
         };
       };
 
