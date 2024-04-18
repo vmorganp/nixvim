@@ -6,6 +6,7 @@
         pyright.enable = true;
         tsserver.enable = true;
         lua-ls.enable = true;
+        terraformls.enable = true;
         # nixd.enable = true; # this is wip and doesn't fill my needs at the moment
         rust-analyzer = {
           enable = true;
