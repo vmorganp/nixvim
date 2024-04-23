@@ -10,6 +10,7 @@
     };
     autoclose.enable = true;
     zen-mode.enable = true;
+    marks.enable = true; # qol marks plugin
 
     # Applications/Extensions? I guess
     telescope = {
