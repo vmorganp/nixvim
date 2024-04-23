@@ -262,7 +262,7 @@
     # Tree
     {
       key = "<leader>ot";
-      action = "<cmd>:CHADopen<CR>";
+      action = "<cmd>:NvimTreeFindFileToggle<CR>";
       options = { desc = "Toggle File Tree"; };
     }
 

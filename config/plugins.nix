@@ -40,7 +40,7 @@
       };
     };
 
-    chadtree.enable = true;
+    nvim-tree.enable = true;
     markdown-preview.enable = true;
     todo-comments = {
       enable = true;
