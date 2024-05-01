@@ -125,13 +125,13 @@
     }
     {
       key = "<leader>Tn";
-      action = "<cmd>:set number!<CR>";
+      action = ''
+        function()
+          vim.o.number = not vim.o.number
+          vim.o.signcolumn = vim.o.number and "yes" or "no"
+        end'';
       options = { desc = "toggle line numbers"; };
-    }
-    {
-      key = "<leader>";
-      action = "";
-      options = { desc = ""; };
+      lua = true;
     }
 
     # tabs

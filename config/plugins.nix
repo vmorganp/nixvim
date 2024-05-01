@@ -11,17 +11,20 @@
     autoclose.enable = true;
     zen-mode.enable = true;
     marks.enable = true; # qol marks plugin
+    wilder.enable = true;
 
     # Applications/Extensions? I guess
     telescope = {
       enable = true;
-      extraOptions = {
+      settings = {
         pickers = {
           find_files = { hidden = true; };
           live_grep = { additional_args = [ "--hidden" ]; };
         };
+        defaults = {
+          file_ignore_patterns = [ ".git/" "node_modules" "venv" ];
+        };
       };
-      defaults = { file_ignore_patterns = [ ".git/" "node_modules" "venv" ]; };
       extensions.fzf-native.enable = true;
     };
 
