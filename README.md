@@ -23,7 +23,7 @@ To build it for actual use,
 nix build
 ```
 
-On a system with nix and don't want to clone my stuff to use it
+On a system with nix and don't want to clone my stuff to use it?
 
 ```
 nix run github:vmorganp/nixvim
