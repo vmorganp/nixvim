@@ -61,6 +61,8 @@
     # Git stuff
 
     fugitive.enable = true;
+    diffview.enable = true;
+    neogit.enable = true;
     gitsigns.enable = true;
 
     # Autocomplete/lsp/snippets

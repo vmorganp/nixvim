@@ -240,7 +240,7 @@
     # git
     {
       key = "<leader>gg";
-      action = "<cmd>:Git<CR>";
+      action = "<cmd>:Neogit<CR>";
       options = { desc = "git"; };
     }
     {
