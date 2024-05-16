@@ -8,7 +8,7 @@
       enable = true;
       separatorStyle = "slant";
     };
-    autoclose.enable = true;
+    nvim-autopairs.enable = true;
     zen-mode.enable = true;
     marks.enable = true; # qol marks plugin
     wilder.enable = true;
