@@ -12,6 +12,7 @@
     zen-mode.enable = true;
     marks.enable = true; # qol marks plugin
     wilder.enable = true;
+    sleuth.enable = true;
 
     # Applications/Extensions? I guess
     telescope = {

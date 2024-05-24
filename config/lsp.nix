@@ -4,11 +4,11 @@
       enable = true;
       servers = {
         gopls.enable = true;
-        pyright.enable = true;
-        tsserver.enable = true;
         lua-ls.enable = true;
+        pyright.enable = true;
         terraformls.enable = true;
-        # nixd.enable = true; # this is wip and doesn't fill my needs at the moment
+        tsserver.enable = true;
+
         rust-analyzer = {
           enable = true;
           installRustc = true;
@@ -23,7 +23,7 @@
       enable = true;
       enableLspFormat = true;
       sources = {
-        diagnostics = {
+    diagnostics = {
           actionlint.enable = true;
           codespell.enable = true;
           mypy.enable = true;

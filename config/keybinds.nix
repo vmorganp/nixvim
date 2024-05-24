@@ -23,6 +23,11 @@
       lua = true;
       options = { desc = "format"; };
     }
+    {
+      key = "<leader>Tf";
+      action = "<cmd>:FormatToggle<CR>";
+      options = { desc = "Toggle Formatting"; };
+    }
 
     # Telescope stuff
     {
