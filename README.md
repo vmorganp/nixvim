@@ -13,20 +13,19 @@ If you add a new configuration file, remember to add it to the
 To test your configuration simply run the following command
 
 ```
-NIXPKGS_ALLOW_UNFREE=1 nix run . --impure # until i figure out a better way to allow unfree
-# nix run .
+NIXPKGS_ALLOW_UNFREE=1 nix run . --impure
 ```
 
 To build it for actual use,
 
 ```
-nix build
+NIXPKGS_ALLOW_UNFREE=1 nix build . --impure
 ```
 
 On a system with nix and don't want to clone my stuff to use it?
 
 ```
-nix run github:vmorganp/nixvim
+NIXPKGS_ALLOW_UNFREE=1 nix run github:vmorganp/nixvim --impure
 ```
 
 # Links
