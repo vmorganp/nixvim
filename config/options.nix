@@ -41,5 +41,7 @@
 
     signcolumn = "yes";
     colorcolumn = "80";
+
+    inccommand = "split"; # Show substitute preview
   };
 }
