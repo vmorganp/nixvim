@@ -1,8 +1,8 @@
 {
   colorschemes = {
-    # oxocarbon.enable = true;
+    oxocarbon.enable = true;
     base16 = {
-      enable = true;
+      enable = false;
       colorscheme = let
         jsonData = builtins.fromJSON
           (builtins.readFile /home/morgan/.config/stylix/generated.json);
