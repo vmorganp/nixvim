@@ -19,8 +19,7 @@
     }
     {
       key = "<leader>ff";
-      action = "function() vim.lsp.buf.format() end";
-      lua = true;
+      action.__raw = "function() vim.lsp.buf.format() end";
       options = { desc = "format"; };
     }
     {
@@ -37,87 +36,73 @@
     }
     {
       key = "<leader>sc";
-      action = "require('telescope.builtin').commands";
-      lua = true;
+      action.__raw = "require('telescope.builtin').commands";
       options = { desc = "search commands"; };
     }
     {
       key = "<leader>sk";
-      action = "require('telescope.builtin').keymaps";
-      lua = true;
+      action.__raw = "require('telescope.builtin').keymaps";
       options = { desc = "search keymaps"; };
     }
     {
       key = "<leader>sb";
-      action = "require('telescope.builtin').buffers";
-      lua = true;
+      action.__raw = "require('telescope.builtin').buffers";
       options = { desc = "search buffers"; };
     }
     {
       key = "<leader>sp";
-      action = "require('telescope.builtin').quickfix";
-      lua = true;
+      action.__raw = "require('telescope.builtin').quickfix";
       options = { desc = "search problems"; };
     }
     {
       key = "<leader>sh";
-      action = "require('telescope.builtin').help_tags";
-      lua = true;
+      action.__raw = "require('telescope.builtin').help_tags";
       options = { desc = "search help documents"; };
     }
     {
       key = "<leader>sg";
-      action = "require('telescope.builtin').live_grep";
-      lua = true;
+      action.__raw = "require('telescope.builtin').live_grep";
       options = { desc = "search dir"; };
     }
     {
       key = "<leader>sm";
-      action = "require('telescope.builtin').marks";
-      lua = true;
+      action.__raw = "require('telescope.builtin').marks";
       options = { desc = "search marks"; };
     }
     {
       key = "<leader>sr";
-      action = "require('telescope.builtin').resume";
-      lua = true;
+      action.__raw = "require('telescope.builtin').resume";
       options = { desc = "search resume"; };
     }
     {
       key = "<leader>sd";
-      action = "require('telescope.builtin').diagnostics";
-      lua = true;
+      action.__raw = "require('telescope.builtin').diagnostics";
       options = { desc = "search diagnostics"; };
     }
     {
       key = "<leader>e";
-      action = "vim.diagnostic.open_float";
-      lua = true;
+      action.__raw = "vim.diagnostic.open_float";
       options = { desc = "show error float"; };
     }
     {
       key = "<leader>?";
-      action = "require('telescope.builtin').oldfiles";
-      lua = true;
+      action.__raw = "require('telescope.builtin').oldfiles";
       options = { desc = "search recent files"; };
     }
     {
       key = "<leader><space>";
-      action = "require('telescope.builtin').buffers";
-      lua = true;
+      action.__raw = "require('telescope.builtin').buffers";
       options = { desc = "search buffers"; };
     }
     {
       key = "<leader>/";
-      action = "require('telescope.builtin').current_buffer_fuzzy_find";
-      lua = true;
+      action.__raw = "require('telescope.builtin').current_buffer_fuzzy_find";
       options = { desc = "search current buffer"; };
     }
     {
       key = "s";
-      action =
+      action.__raw =
         "function () require('leap').leap { target_windows = { vim.fn.win_getid() } } end";
-      lua = true;
       options = { desc = "leap (bidirectional)"; };
       mode = [ "n" ];
     }
@@ -130,13 +115,12 @@
     }
     {
       key = "<leader>Tn";
-      action = ''
+      action.__raw = ''
         function()
           vim.o.number = not vim.o.number
           vim.o.signcolumn = vim.o.number and "yes" or "no"
         end'';
       options = { desc = "toggle line numbers"; };
-      lua = true;
     }
 
     # tabs
