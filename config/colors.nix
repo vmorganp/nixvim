@@ -25,6 +25,6 @@ in {
         };
     };
   } else {
-    oxocarbon.enable = true;
+    ayu.enable = true;
   };
 }

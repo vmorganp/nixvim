@@ -63,7 +63,6 @@
 
     fugitive.enable = true;
     diffview.enable = true;
-    neogit.enable = true;
     gitsigns.enable = true;
 
     # Autocomplete/lsp/snippets
@@ -80,7 +79,20 @@
         sources = [
           { name = "nvim_lsp"; }
           { name = "path"; }
-          { name = "buffer"; }
+          {
+            name = "buffer";
+            option.__raw = ''
+                          {
+                            get_bufnrs = function()
+                              local bufs = {}
+                              for _, win in ipairs(vim.api.nvim_list_wins()) do
+                                bufs[vim.api.nvim_win_get_buf(win)] = true
+                              end
+                              return vim.tbl_keys(bufs)
+                            end
+              }
+            '';
+          }
           { name = "luasnip"; }
         ];
 
@@ -141,9 +153,6 @@
     };
 
     # Dark arts
-    copilot-vim = {
-      enable = true;
-      settings = { "no_tab_map" = true; };
-    };
+    copilot-lua = { enable = true; };
   };
 }

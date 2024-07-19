@@ -229,7 +229,7 @@
     # git
     {
       key = "<leader>gg";
-      action = "<cmd>:Neogit<CR>";
+      action = "<cmd>:Git<CR>";
       options = { desc = "git"; };
     }
     {
@@ -265,19 +265,19 @@
     # Cope ilot
     {
       key = "<C-c>";
-      action = ''copilot#Accept("<CR>")'';
+      action = "<cmd>:Copilot suggestion accept<CR>";
       # This is a little jank, in that it types out keycodes. nixvim doesn't currently have the override for this
       options = {
         desc = "Copilot Accept";
         silent = true;
-        expr = true;
+        # expr = true;
       };
       mode = [ "i" ];
     }
 
     {
       key = "<M-Bslash>";
-      action = "<Cmd>call copilot#Suggest()<CR>";
+      action = "<cmd>:Copilot suggestion next<CR>";
       # This is a little jank, in that it types out keycodes. nixvim doesn't currently have the override for this
       options = {
         desc = "Copilot Suggest";
