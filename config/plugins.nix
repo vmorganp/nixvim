@@ -1,13 +1,18 @@
 {
   plugins = {
     # Quality of life
-    lualine.enable = true;
+
+    lualine = {
+      enable = true;
+      globalstatus = true;
+    };
+    barbecue.enable = true;
+
     which-key.enable = true;
     comment.enable = true;
-    bufferline = {
-      enable = true;
-      separatorStyle = "slant";
-    };
+
+    indent-blankline.enable = true;
+
     nvim-autopairs.enable = true;
     zen-mode.enable = true;
     marks.enable = true; # qol marks plugin

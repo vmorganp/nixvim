@@ -23,9 +23,8 @@
     smartindent = true;
     wrap = false;
     linebreak = true;
-    title = true;
-    # always show the tab bar
-    showtabline = 2;
+    # show the tab bar when there are multiple tabs
+    showtabline = 1;
     # keep n lines above and below the cursor
     scrolloff = 10;
     # keep n lines left and right of the cursor
