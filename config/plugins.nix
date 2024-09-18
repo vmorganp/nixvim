@@ -4,7 +4,7 @@
 
     lualine = {
       enable = true;
-      globalstatus = true;
+      settings = { options = { globalstatus = true; }; };
     };
     barbecue.enable = true;
 
@@ -15,6 +15,7 @@
 
     nvim-autopairs.enable = true;
     zen-mode.enable = true;
+    twilight.enable = true;
     marks.enable = true; # qol marks plugin
     wilder.enable = true;
     sleuth.enable = true;
@@ -144,7 +145,7 @@
           '';
         };
       };
-      extraOptions.sorting.comparators = [
+      settings.sorting.comparators = [
         "require('cmp.config.compare').sort_text"
         "require('cmp.config.compare').offset"
         "require('cmp.config.compare').exact"
@@ -158,6 +159,6 @@
     };
 
     # Dark arts
-    copilot-lua = { enable = true; };
+    # copilot-lua = { enable = true; };
   };
 }

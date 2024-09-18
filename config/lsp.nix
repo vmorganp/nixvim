@@ -4,10 +4,11 @@
       enable = true;
       servers = {
         gopls.enable = true;
+        golangci-lint-ls.enable = true;
         lua-ls.enable = true;
         pyright.enable = true;
         terraformls.enable = true;
-        tsserver.enable = true;
+        ts-ls.enable = true;
 
         rust-analyzer = {
           enable = true;
@@ -23,7 +24,7 @@
       enable = true;
       enableLspFormat = true;
       sources = {
-    diagnostics = {
+        diagnostics = {
           actionlint.enable = true;
           codespell.enable = true;
           mypy.enable = true;
@@ -34,7 +35,7 @@
           nixfmt.enable = true;
           black = {
             enable = true;
-            withArgs = ''{extra_args = { "--line-length=120" }}'';
+            settings = ''{extra_args = { "--line-length=120" }}'';
           };
           terraform_fmt.enable = true;
         };

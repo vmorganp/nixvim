@@ -114,6 +114,11 @@
       options = { desc = "toggle word wrap"; };
     }
     {
+      key = "<leader>Tf";
+      action = "<cmd>:Twilight<CR>";
+      options = { desc = "[Toggle] [Fade]"; };
+    }
+    {
       key = "<leader>Tn";
       action.__raw = ''
         function()

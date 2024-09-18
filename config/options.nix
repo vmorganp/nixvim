@@ -12,7 +12,6 @@
     expandtab = true;
     cursorline = true;
     mouse = "a";
-    list = true;
     foldmethod = "indent";
     foldenable = true;
     foldlevelstart = 99;
@@ -43,4 +42,10 @@
 
     inccommand = "split"; # Show substitute preview
   };
+  match = { ExtraWhitespace = "\\s\\+$"; };
+  highlight.ExtraWhitespace = {
+    ctermbg = "darkred";
+    bg = "darkred";
+  };
+
 }
