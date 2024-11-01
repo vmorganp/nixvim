@@ -7,6 +7,7 @@
       settings = { options = { globalstatus = true; }; };
     };
     barbecue.enable = true;
+    web-devicons.enable = true;
 
     which-key.enable = true;
     comment.enable = true;

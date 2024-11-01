@@ -4,13 +4,14 @@
       enable = true;
       servers = {
         gopls.enable = true;
-        golangci-lint-ls.enable = true;
-        lua-ls.enable = true;
+        golangci_lint_ls.enable = true;
+        lua_ls.enable = true;
         pyright.enable = true;
         terraformls.enable = true;
-        ts-ls.enable = true;
+        ts_ls.enable = true;
+        svelte.enable = true;
 
-        rust-analyzer = {
+        rust_analyzer = {
           enable = true;
           installRustc = true;
           installCargo = true;
