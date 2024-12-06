@@ -101,9 +101,8 @@
     }
     {
       key = "s";
-      action.__raw =
-        "function () require('leap').leap { target_windows = { vim.fn.win_getid() } } end";
-      options = { desc = "leap (bidirectional)"; };
+      action.__raw = "function() require('flash').jump() end";
+      options = { desc = "jump"; };
       mode = [ "n" ];
     }
 

@@ -51,6 +51,14 @@
       };
     };
 
+    snacks = {
+      settings = {
+        words.enabled = true;
+        bigfile.enabled = true;
+        notifier.enabled = true;
+      };
+    };
+
     nvim-tree.enable = true;
     markdown-preview.enable = true;
     todo-comments = {
@@ -60,10 +68,7 @@
     treesitter.enable = true;
     rainbow-delimiters.enable = true;
 
-    leap = {
-      enable = true;
-      addDefaultMappings = false;
-    };
+    flash.enable = true;
     nvim-colorizer.enable = true;
 
     # Git stuff
