@@ -21,6 +21,9 @@
     wilder.enable = true;
     sleuth.enable = true;
 
+    # Visual flair
+    smear-cursor.enable = true;
+
     # Applications/Extensions? I guess
     telescope = {
       enable = true;
@@ -54,6 +57,7 @@
     snacks = {
       settings = {
         words.enabled = true;
+        quickfile.enabled = true;
         bigfile.enabled = true;
         notifier.enabled = true;
       };
@@ -69,7 +73,7 @@
     rainbow-delimiters.enable = true;
 
     flash.enable = true;
-    nvim-colorizer.enable = true;
+    colorizer.enable = true;
 
     # Git stuff
 
