@@ -65,10 +65,7 @@
 
     nvim-tree.enable = true;
     markdown-preview.enable = true;
-    todo-comments = {
-      enable = true;
-      keymaps.todoTelescope = { key = "<leader>td"; };
-    };
+    todo-comments.enable = true;
     treesitter.enable = true;
     rainbow-delimiters.enable = true;
 

@@ -266,6 +266,14 @@
       options = { desc = "Markdown Preview"; };
     }
 
+    # todo grep
+    {
+      key = "<leader>td";
+      action.__raw =
+        "function() require('telescope.builtin').grep_string({search='todo'}) end";
+      options = { desc = "grep todo"; };
+    }
+
     # Cope ilot
     {
       key = "<C-c>";
